@@ -1,0 +1,21 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="alien" class="org.example.Alien" >
+        <property name="age" value="21"></property>
+<!--        for premitive type of variables-->
+        <property name="lap" ref="lap1"></property>
+<!--        for non premitive type of variables like object type-->
+
+    </bean>
+
+    <bean id="lap1" class="org.example.Laptop">
+    </bean>
+
+    <bean id="lap2" class="org.example.Laptop">
+    </bean>
+
+</beans>

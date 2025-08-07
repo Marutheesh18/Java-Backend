@@ -1,0 +1,47 @@
+Level 1
+
+History
+Features
+Variables
+Data Types
+Operators
+JDK,JRE,JVM
+Conditional Statements
+Loops
+Strings
+Arrays
+Methods
+
+Level 2
+
+Classes
+Objects
+Inheritance
+Polymorphism
+Encapsulation
+Abstraction
+Interfaces
+
+Level 3
+
+Exception Handling
+Packages
+Collections
+Multithreading
+Generics
+Inner Classes
+Wrapper Classes
+Enumeration
+File Handling
+IO Streams 
+Java 8 Features
+
+Level 4
+
+JDBC
+Networking
+Reflection
+Applet
+JavaFX
+RegEx
+Serialization

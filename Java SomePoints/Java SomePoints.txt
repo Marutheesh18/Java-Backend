@@ -1,0 +1,15 @@
+1)Local Variables should be initialized , if we try to print its value in the block without initializing we will get an error
+2)We cannot use non-static variable in static method 
+  static --> non static --> Allowed
+  non static --> static --> Not Allowed
+  Static variables , methods gets memory at the time of class loading at first only
+3)If any class will not extends any other class or it does not have any parent class means its default parent class will be "object"
+4)Try will run if it has finally not catch after it but they should be in sequence ie try after catch or finally . 
+  The sequence should be try->catch->finally . finally cannot come before catch .
+  JVM creates an object of error and it throws at runtime , if main method also throws exception means , the exception is handled by the JVM itself
+5)Private methods cannot be overridden 
+  In  Overriding, the child class method should have more powerful or bigger usage access modifier than parent class method access modifier
+  default(parent) -> protected(child)
+  protected(parent) -> public(child)
+6)For Abstract class , an object cannot be created , but it will have constructor because abstract class will have instance variables (constructor is used to assign default values to variables)
+For Interface class , an object cannot be created and it wont have constructor because its variables are public , static , final . In final we assign the value when variable is declared itself so there wont be any need of constructor to assign default values.

@@ -1,0 +1,19 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="alien" class="org.example.Alien">
+
+    </bean>
+
+<!--    <bean id="alien2" class="org.example.Alien">-->
+<!--    </bean>-->
+<!--    howmany beans of class you mention that much of objects will be created, we can check this by calling constructor as every time when object created ,the constructor is also called-->
+
+    <bean id="lap" class="org.example.Laptop">
+
+    </bean>
+
+</beans>
