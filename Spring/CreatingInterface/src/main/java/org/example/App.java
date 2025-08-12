@@ -12,7 +12,5 @@ public class App
         Alien obj= (Alien)context.getBean("alien");
         obj.code();
 
-
-
     }
 }

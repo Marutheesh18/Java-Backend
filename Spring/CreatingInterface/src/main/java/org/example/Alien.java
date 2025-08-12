@@ -5,7 +5,7 @@ import java.beans.ConstructorProperties;
 public class Alien {
 
     private int age;
-    private Laptop lap;
+    private Computer com;
 
 
     public Alien(){
@@ -13,17 +13,34 @@ public class Alien {
     }
 
 //    @ConstructorProperties({"age", "lap"})
-    public Alien(int age,Laptop lap){
-        System.out.println("Parameterised Constructor Called");
+//    public Alien(int age,Laptop lap){
+//        System.out.println("Parameterised Constructor Called");
+//
+//        this.age=age;
+//        this.lap=lap;
+//    }
 
-        this.age=age;
-        this.lap=lap;
+
+    public Computer getCom() {
+        return com;
+    }
+
+    public void setCom(Computer lap) {
+        this.com = com;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public void code(){
         System.out.println("Coding");
         System.out.println(age);
-        lap.compile();
+        com.compile();
 
     }
 }
