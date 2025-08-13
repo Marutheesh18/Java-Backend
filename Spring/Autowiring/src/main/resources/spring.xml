@@ -1,0 +1,30 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="alien" class="org.example.Alien" >
+
+<!--        by type attribute-->
+<!--        <constructor-arg type="int" value="21"/>-->
+<!--        <constructor-arg type="org.example.Laptop" ref="lap1"/>-->
+
+        <!--        by index attribute-->
+<!--        <constructor-arg index="0" value="21"/>-->
+<!--        <constructor-arg index="1" ref="lap1"/>-->
+
+        <!--        by name attribute-->
+<!--                <constructor-arg name="name" value="21"/>-->
+<!--                <constructor-arg name="lap" ref="lap1"/>-->
+<!--        It must still follow the order of the parameters unless the-->
+<!--        @ConstructorProperties annotation is used-->
+    </bean>
+
+    <bean id="lap1" class="org.example.Laptop">
+
+    </bean>
+
+
+
+</beans>
