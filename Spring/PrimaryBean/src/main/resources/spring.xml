@@ -4,18 +4,18 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    autowiring works when property is not mentioned , when property is mentioned it work-->
     <bean id="alien" class="org.example.Alien" autowire="byType" >
-<!--        when the id's are not matching we can execute them by using "byType" as both are of computer type, suppose if two id's are there which both are also of computer type means it will giv error-->
 
 <!--    <bean id="alien" class="org.example.Alien" autowire="byName" >-->
         		<property name="age" value="21"/>
-<!--        		<property name="com" ref="com"/>-->
+<!--        		<property name="com" ref="com1"/>-->
+<!--        if property is mentioned explicitly then com1 Desktop will be printed-->
     </bean>
 
-<!--    <bean id="com" class="org.example.Laptop">-->
+    <bean id="com" class="org.example.Laptop" primary="true">
+<!--        primary bean is used to solve the error when two beans of same type will be existing -->
 
-<!--    </bean>-->
+    </bean>
 
     <bean id="com1" class="org.example.Desktop">
 
