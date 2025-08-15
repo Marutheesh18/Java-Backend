@@ -12,6 +12,5 @@ public class App
         Alien obj= (Alien)context.getBean("alien");
         obj.code();
 
-     //   Desktop obj1=(Desktop)context.getBean("com1");
     }
 }

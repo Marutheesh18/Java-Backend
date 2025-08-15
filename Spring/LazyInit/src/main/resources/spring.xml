@@ -8,7 +8,7 @@
 
 <!--    <bean id="alien" class="org.example.Alien" autowire="byName" >-->
         		<property name="age" value="21"/>
-        		<property name="com" ref="com1"/>
+<!--        		<property name="com" ref="com1"/>-->
 <!--        if property is mentioned explicitly then com1 Desktop will be printed-->
     </bean>
 
@@ -17,12 +17,10 @@
 
     </bean>
 
-    <bean id="com1" class="org.example.Desktop" lazy-init="true">
+    <bean id="com1" class="org.example.Desktop">
 
     </bean>
 
-<!--    every time desktop object will be created , if i want object to be created only when desktop is called for the first time , then i want to specify it as "lazy init" and once the object is created it will be there in the container-->
-<!--if non lazy bean is dependent on lazy ban means the object of lazy bean will b created -->
 
 
 </beans>
