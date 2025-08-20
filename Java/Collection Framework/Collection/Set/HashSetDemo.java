@@ -15,6 +15,7 @@ public class HashSetDemo {
         System.out.println(set); //added orders of values will change
 
         set.remove(20);
+        
         System.out.println(set);
 
         System.out.println(set.contains(30));
